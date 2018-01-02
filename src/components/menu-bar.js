@@ -5,7 +5,7 @@ export default function MenuBar( props ){
     <header class="header">
       <nav class="inner">
         <Link to="/" exact>
-          <img class="logo" src="~public/logo-48.png" alt="logo"></img>
+          Starter
         </Link>
         <Link to="/about">About</Link>
         <div class="right">
