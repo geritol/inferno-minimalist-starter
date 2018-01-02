@@ -4,7 +4,6 @@
   "private": true,
   "author": {
     "name" : "Gergő Tolnai",
-    "email" : "b@rubble.com",
     "url" : "https://geritol.github.io/"
   },
   "dependencies": {
