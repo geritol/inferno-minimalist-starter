@@ -8,9 +8,9 @@ import './index.css'
 import App from './pages/App'
 import Home from './pages/Home'
 import About from './pages/About'
-import Login from './pages/Login'
-import Register from './pages/Register'
-import ResetPassword from './pages/ResetPassword'
+import Login from './pages/user/Login'
+import Register from './pages/user/Register'
+import ResetPassword from './pages/user/ResetPassword'
 
 //hdf
 

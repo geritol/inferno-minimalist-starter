@@ -1,5 +1,4 @@
 import Component from 'inferno-component';
-import {Link} from 'inferno-router'
 import './Auth.css'
 
 class ResetPassword extends Component {
