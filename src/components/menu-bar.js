@@ -7,10 +7,7 @@ export default function MenuBar( props ){
         <Link to="/" exact>
           <img class="logo" src="~public/logo-48.png" alt="logo"></img>
         </Link>
-        <Link to="/top">Top</Link>
-        <Link to="/new">New</Link>
-        <Link to="/show">Show</Link>
-        <Link to="/ask">Ask</Link>
+        <Link to="/about">About</Link>
         <div class="right">
           <Link to="/register">Register</Link>
         </div>
