@@ -9,13 +9,12 @@ class ResetPassword extends Component {
 			showError: false,
       error: ""
 		};
-    this.handlePasswordChange = this.handlePasswordChange.bind(this);
+    this.handleEmailChange = this.handleEmailChange.bind(this);
 	}
-  login(){
-    console.log(this)
-    console.log(this.state.loginData)
+  reset(){
+    // TODO
   }
-  handlePasswordChange(event){
+  handleEmailChange(event){
      this.setState({email: event.target.value});
   }
   callback(type, ref) {
@@ -30,8 +29,8 @@ class ResetPassword extends Component {
         <div className="single errors" style={{visibility: this.state.showError? 'visible' : 'hidden'}}>{this.state.error}</div>
         <input className="single" type="email" placeholder="Email address" ref={this.callback.bind(this, 'email')}
           value={this.state.email}
-          onInput={this.handleUsernameChange}/>
-        <button className="single btn" onClick={() => this.login()}>Send me a resetting email!</button>
+          onInput={this.handleEmailChange}/>
+        <button className="single btn" onClick={() => this.reset()}>Send me a resetting email!</button>
       </div>
   );
 	}
