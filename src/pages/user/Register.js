@@ -10,11 +10,17 @@ class Register extends Component {
 			error: ""
 		};
 	}
+	callback(type, ref) {
+		this[type] = ref
+	}
+	componentDidMount(){
+		this.email.focus()
+	}
 	render() {
 		return (
 			<div className="column auth" >
 				<div className="single errors" style={{visibility: this.state.showError? 'visible' : 'hidden'}}>{this.state.error}</div>
-				<input className="single" type="email" placeholder="Email address"/>
+				<input className="single" type="email" placeholder="Email address" ref={this.callback.bind(this, 'email')}/>
 				<input className="single" type="text" placeholder="Username"/>
 				<input className="single" type="password" placeholder="Password"/>
 				<input className="single" type="password" placeholder="Password (again)"/>
